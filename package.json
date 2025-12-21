@@ -5,7 +5,8 @@
   "private": true,
   "devDependencies": {
     "@types/bun": "latest",
-    "mastra": "^0.18.9"
+    "mastra": "^0.18.9",
+    "tsup": "^8.5.1"
   },
   "peerDependencies": {
     "typescript": "^5.9.3"
@@ -23,6 +24,7 @@
     "@mastra/evals": "^0.14.4",
     "@mastra/libsql": "^0.16.4",
     "@mastra/loggers": "^0.10.19",
+    "@mastra/mcp": "^0.14.5",
     "@mastra/memory": "^0.15.13",
     "@types/node": "^25.0.3",
     "zod": "^4"
