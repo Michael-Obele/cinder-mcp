@@ -3,7 +3,6 @@ import { Mastra } from "@mastra/core/mastra";
 import { cinderMcpServer } from "./server";
 
 export const mastra = new Mastra({
-  // agents: { cinderAgent },
   mcpServers: {
     cinder: cinderMcpServer,
   },

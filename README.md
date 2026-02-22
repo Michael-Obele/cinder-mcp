@@ -11,6 +11,15 @@ This MCP server exposes the following tools:
 - **Crawl**: `cinder_crawl` - Start background crawl jobs for deep web indexing.
 - **Crawl Status**: `cinder_get_crawl_status` - Monitor the progress of crawl jobs.
 
+## Usage Guidance
+
+This server includes built-in instructions for AI models (Mastra MCPServer `instructions`). When implementing a client or writing custom prompts:
+
+- **Entry Point**: Always encourage models to start with `cinder_search` to find relevant URLs.
+- **Deep Dives**: Use `cinder_scrape` for single-page content extraction once a URL is known.
+- **Site Mapping**: Use `cinder_crawl` for multi-page domain exploration.
+- **Job Recovery**: Warn models not to guess crawl IDs and only use IDs returned by `cinder_crawl`.
+
 ## Prerequisites
 
 - [Bun](https://bun.com) v1.0.0 or higher
